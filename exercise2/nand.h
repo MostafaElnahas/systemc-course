@@ -16,7 +16,7 @@ SC_CTOR(nand):A("A"),B("B"),Z("Z"){
 
 void do_nand()
 {
-Z.write(!(A.read()&B.read()));
+Z=!(A&B);
 }
 
 
